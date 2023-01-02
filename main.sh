@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Metis Linux <info@metislinux.org>
+## Copyright (C) 2022-2023 Metis Linux | pwnwriter  <info@metislinux.org>
 ## Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
 
 # DIRS
-PKGDIR=("x86_64/")
+repo=recon
+PKGDIR="$(pwd)/${repo}/os/x86_64/"
+
 
 Cleanup() {
         cd "$PKGDIR" || exit
