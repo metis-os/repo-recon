@@ -11,5 +11,21 @@ Want to submit your tool here ? or just a tool that you desire to be packaged?
 
 Don't worry, Just submit an issue. We will package that tools for you.
 
-Happy hacking :) !!!!
 
+
+Setup:
+
+Add the following line to your `/etc/pacman.conf`
+```bash
+[recon]
+SigLevel = Optional TrustAll
+Include = /etc/pacman.d/metis-recon
+```
+and add the server adress to `/etc/pacman.d/metis-recon`
+
+```
+Server = https://metis-os.github.io/metis-recon/$repo/os/$arch
+```
+
+
+Happy hacking :) !!!!
