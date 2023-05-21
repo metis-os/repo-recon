@@ -19,13 +19,18 @@ Include = /etc/pacman.d/metis-recon
 and add the server adress to `/etc/pacman.d/metis-recon`
 
 ```bash
+
+# main server
 Server = https://metis-os.github.io/repo-recon/$repo/os/$arch
 
 # subdomain
 Server = https://repo-recon.metislinux.org/$repo/os/$arch
 
-# pwnwriter
+# pwnwriter's fork
 Server = https://recon.pwnwriter.xyz/$repo/os/$arch
+
+# codedsprit's fork
+Server = https://codedsprit.github.io/repo-recon/$repo/os/$arch
 
 ```
 
